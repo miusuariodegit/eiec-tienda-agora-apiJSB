@@ -15,7 +15,7 @@ app = FastAPI(
 @app.get("/health")
 def health() -> dict[str, str]:
     """Smoke endpoint para validar que la API responde."""
-    return {"status": "ok"}
+    return {"status": "fail"}
 
 
 @app.get("/version")
